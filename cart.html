@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart | Apex Motors</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        APEX<span>MOTORS</span>
+    </a>
+
+    <button class="menu-button" id="menuButton">☰</button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="vehicles.html">Vehicles</a>
+
+        <a href="cart.html" class="active">
+            Cart
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html" id="accountLink">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-hero">
+
+    <p class="eyebrow">
+        YOUR GARAGE
+    </p>
+
+    <h1>
+        Shopping Cart
+    </h1>
+
+    <p>
+        Review the vehicles you selected.
+    </p>
+
+</section>
+
+
+<main class="cart-page">
+
+    <div id="cartItems" class="cart-items">
+    </div>
+
+
+    <aside class="cart-summary">
+
+        <h2>
+            Order Summary
+        </h2>
+
+
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <strong id="subtotal">$0</strong>
+        </div>
+
+
+        <div class="summary-line">
+            <span>Estimated taxes</span>
+            <span>Calculated later</span>
+        </div>
+
+
+        <div class="summary-total">
+            <span>Total</span>
+            <strong id="cartTotal">$0</strong>
+        </div>
+
+
+        <button
+            class="button primary full-button"
+            id="checkoutButton"
+        >
+            Proceed to Checkout
+        </button>
+
+
+        <p class="demo-warning">
+            Demo checkout — no real purchase will be made.
+        </p>
+
+    </aside>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <a href="index.html" class="logo">
+            APEX<span>MOTORS</span>
+        </a>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Apex Motors. All rights reserved.
+    </div>
+
+</footer>
+
+
+<div id="toast" class="toast">
+    Message
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
