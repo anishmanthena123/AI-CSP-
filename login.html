@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Account | Apex Motors</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        APEX<span>MOTORS</span>
+    </a>
+
+    <button class="menu-button" id="menuButton">☰</button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="vehicles.html">Vehicles</a>
+
+        <a href="cart.html">
+            Cart
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html" class="active" id="accountLink">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-hero">
+
+    <p class="eyebrow">
+        APEX ACCOUNT
+    </p>
+
+    <h1>
+        Welcome to Apex.
+    </h1>
+
+    <p>
+        Sign in or create an account.
+    </p>
+
+</section>
+
+
+<main class="account-container">
+
+
+<section
+    class="form-card account-welcome"
+    id="loggedInArea"
+    style="display:none;"
+>
+
+    <h2>
+        Welcome,
+        <span id="welcomeName"></span>!
+    </h2>
+
+    <p>
+        You are signed into your Apex Motors account.
+    </p>
+
+    <a
+        href="vehicles.html"
+        class="button primary"
+    >
+        Explore Vehicles
+    </a>
+
+    <button
+        class="button secondary"
+        id="logoutButton"
+    >
+        Log Out
+    </button>
+
+</section>
+
+
+<div
+    class="account-grid"
+    id="accountForms"
+>
+
+
+<section class="form-card">
+
+    <p class="eyebrow">
+        RETURNING DRIVER
+    </p>
+
+    <h2>
+        Log In
+    </h2>
+
+
+    <form id="loginForm">
+
+
+        <div class="form-group">
+
+            <label for="loginEmail">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="loginEmail"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="loginPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                required
+            >
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="button primary full-button"
+        >
+            Log In
+        </button>
+
+
+        <p
+            id="loginMessage"
+            class="form-status"
+        ></p>
+
+
+    </form>
+
+</section>
+
+
+<section class="form-card">
+
+    <p class="eyebrow">
+        NEW DRIVER
+    </p>
+
+    <h2>
+        Create Account
+    </h2>
+
+
+    <form id="signupForm">
+
+
+        <div class="form-row">
+
+
+            <div class="form-group">
+
+                <label for="signupFirst">
+                    First Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupFirst"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupLast">
+                    Last Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupLast"
+                    required
+                >
+
+            </div>
+
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="signupEmail">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="signupEmail"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="signupPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="signupPassword"
+                minlength="6"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                minlength="6"
+                required
+            >
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="button primary full-button"
+        >
+            Create Account
+        </button>
+
+
+        <p
+            id="signupMessage"
+            class="form-status"
+        ></p>
+
+
+    </form>
+
+</section>
+
+
+</div>
+
+
+<p class="security-note">
+    This login system is for a school demonstration.
+    Account information is stored locally in the browser.
+    Do not use a real password.
+</p>
+
+
+</main>
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <a href="index.html" class="logo">
+            APEX<span>MOTORS</span>
+        </a>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Apex Motors. All rights reserved.
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
